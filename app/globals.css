@@ -19,3 +19,8 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* global.css or a specific file for styling */
+.custom-image {
+  height: 1700px;
+  object-fit: cover; /* or 'contain', depending on your need */
+}
