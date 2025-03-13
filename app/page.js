@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <div className="">
       <div className="s1-intro bg-[#0d0c12] h-auto sm:h-[50rem] md:h-[60rem] lg:h-[60rem] xl:h-[60rem] flex justify-center items-center">
-        <div className="xl:grid h-[4rem] w-[48rem] bg-gray-700 opacity-90 shadow-lg shadow-gray-300 fixed top-0 right-0 m-[2rem] rounded-lg hidden items-center justify-center z-1000">
+        <div className="xl:grid lg:grid h-[4rem] w-[48rem] bg-gray-700 opacity-90 shadow-lg shadow-gray-300 fixed top-0 right-0 m-[2rem] rounded-lg hidden items-center justify-center z-1000">
           <div className="w-[46rem] h-2 bg-black rounded">
             <div
               className="bg-slate-200 h-2 rounded"
