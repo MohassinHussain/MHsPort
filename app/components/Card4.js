@@ -75,25 +75,25 @@ function Card4() {
             <Image src={fylz_ss} width={370} height={230} className="rounded-lg" />
           </div>
           <div className="flex justify-center">
-            <Image src="" width={370} height={230} className="rounded-lg" />
+            {/* <Image src="" width={370} height={230} className="rounded-lg" /> */}
           </div>
           <div className="flex justify-center">
-            <Image src="" width={370} height={230} className="rounded-lg" />
+            {/* <Image src="" width={370} height={230} className="rounded-lg" /> */}
           </div>
           <div className="flex justify-center">
-            <Image src="" width={370} height={230} className="rounded-lg" />
+            {/* <Image src="" width={370} height={230} className="rounded-lg" /> */}
           </div>
           <div className="flex justify-center">
-            <Image src="" width={370} height={230} className="rounded-lg" />
+            {/* <Image src="" width={370} height={230} className="rounded-lg" /> */}
           </div>
           <div className="flex justify-center">
-            <Image src="" width={370} height={230} className="rounded-lg" />
+            {/* <Image src="" width={370} height={230} className="rounded-lg" /> */}
           </div>
         </div>
 
         <div className="mt-60">
-          <h1 className="text-4xl sm:text-5xl font-bold">
-            Behind the Scenes: Exclusive Interviews with Podcast Creators
+          <h1 className="text-4xl sm:text-5xl font-bold text-center">
+            Achievements
           </h1>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 justify-around gap-6 mt-6">

@@ -4,7 +4,7 @@ import im from '../../public/img1.avif'
 
 function Card1() {
   return (
-    <div className="flex flex-col md:grid md:grid-cols-2 grid-cols-1 gap-4 w-[80rem] sm:w-[90%] mx-auto mt-10">
+    <div className="flex flex-col md:grid md:grid-cols-2 grid-cols-1 gap-4 w-[80rem] sm:w-[90%] mx-auto mt-5">
       <div className="flex flex-col  justify-center px-4 sm:px-8">
         <h1 className="text-4xl sm:text-5xl font-bold pb-6">B Md Mohassin Hussain</h1>
         <p className="text-xl sm:text-2xl">Full-stack Developer AI Enthusiast</p>

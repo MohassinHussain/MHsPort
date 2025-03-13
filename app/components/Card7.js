@@ -1,8 +1,21 @@
-import React from "react";
+"use client"
+
+import React, { useState } from "react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { MdOutgoingMail } from "react-icons/md";
 
 function Card7() {
+  const [from, setFrom] = useState("");
+  const [to, setTo] = useState("");
+  const [msg, setMsg] = useState("")
+
+  const sendMail = (e) => {
+    e.preventDefault();
+    console.log(from);
+    console.log(msg);
+    
+  }
+
   return (
     <div className="bg-[#0d0c12] w-full sm:w-[90%] lg:w-[80rem] mx-auto h-auto sm:h-auto">
       <h1 className="text-4xl sm:text-5xl p-10 font-bold text-center text-white">
@@ -46,14 +59,19 @@ function Card7() {
         <div className="bg-[#1f1f21] p-6 rounded-lg flex flex-col">
           <h1 className="text-3xl font-bold mb-6 text-center text-white">Do Mail</h1>
           <input
+            type='email'
             placeholder="Your Email..."
             className="p-3 rounded-md bg-[#0d0c12] w-full sm:w-3/4 mb-4 text-white"
+            value={from}
+            onChange = {(e)=> setFrom(e.target.value)}
           />
           <textarea
             className="p-3 rounded-md bg-[#0d0c12] w-full sm:w-3/4 resize-none text-white"
             placeholder="Enter your content here.."
+            value={msg}
+            onChange = {(e)=> setMsg(e.target.value)}
           ></textarea>
-          <button className="self-center sm:self-start mt-4 p-3 rounded-md bg-[#0d0c12] hover:bg-[#292b2f] transition-colors font-bold text-white">
+          <button className="self-center sm:self-start mt-4 p-3 rounded-md bg-[#0d0c12] hover:bg-[#292b2f] transition-colors font-bold text-white" onClick={sendMail}>
             Send
           </button>
         </div>
