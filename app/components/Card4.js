@@ -19,7 +19,7 @@ function Card4() {
       title: "bFinder",
       description:
         "Created a React Native expo app for location discovery, integrating Firebase for real-time database and authentication, using Clerk Auth for secure user management.",
-      visit: "#",
+      visit: "https://drive.google.com/file/d/1JIrL9oQFk02JW2hkQQ8t3c1O50aOuSzH/view?usp=sharing",
     },
     {
       number: "3",
@@ -31,7 +31,7 @@ function Card4() {
       number: "4",
       title: "inApp-Share",
       description: "Built a prototype(YouTube) for in-app video sharing with a responsive UI using Tailwind CSS, integrated Firebase Authentication (Gmail login) for secure access, and used MongoDB to store and retrieve video metadata.",
-      visit: "https://github.com/MohassinHussain/inApp-share",
+      visit: "https://drive.google.com/file/d/1JNOaXq6rEnhggqHGHZ8rXgMewm3inXKP/view?usp=sharing",
     },
     {
       number: "5",
