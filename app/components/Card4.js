@@ -5,7 +5,7 @@ import { IoAccessibility } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
-import img1 from '../../public/img1.avif';
+
 import fylz_ss from '../../public/fylz_ss.png';
 import ias4 from '../../public/ias_4.png';
 import ias5 from '../../public/ias_5.png';
@@ -269,7 +269,7 @@ function Card4() {
           <div className="flex justify-center">
             <div 
               className="relative w-full aspect-[9/16] cursor-pointer"
-              onClick={() => handleImageClick(bFinder_explore)}
+              onClick={() => handleImageClick(ressa_home)}
             >
               <Image 
                 src={ressa_home} 
@@ -345,7 +345,7 @@ function Card4() {
           </h1>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
             <a 
-              href="https://www.linkedin.com/in/mohassin-hussain-0a0a2a1b0/" 
+              href="https://www.linkedin.com/in/mohassinhussain/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-[#c0caf5] hover:text-[#7aa2f7] transition-colors text-lg sm:text-xl"
@@ -354,7 +354,7 @@ function Card4() {
               <span>LinkedIn</span>
             </a>
             <a 
-              href="https://github.com/mohassin-hussain" 
+              href="https://github.com/MohassinHussain" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-[#c0caf5] hover:text-[#7aa2f7] transition-colors text-lg sm:text-xl"
@@ -363,7 +363,7 @@ function Card4() {
               <span>GitHub</span>
             </a>
             <a 
-              href="mailto:mohassin.hussain@gmail.com" 
+              href="mailto:mohassinhussain22@gmail.com" 
               className="flex items-center gap-2 text-[#c0caf5] hover:text-[#7aa2f7] transition-colors text-lg sm:text-xl"
             >
               <FaEnvelope className="text-2xl sm:text-3xl" />

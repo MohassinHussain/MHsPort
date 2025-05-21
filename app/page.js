@@ -74,13 +74,13 @@ export default function Home() {
         <Card4 />
       </div>
 
-      <div 
+      {/* <div 
         ref={el => sectionRefs.current[4] = el}
         id="section-samples" 
         className="s5-passion bg-[#24283b] h-auto sm:h-[40rem] md:h-[50rem] lg:h-[50rem] xl:h-[50rem] flex justify-center items-center opacity-0 translate-y-10 transition-all duration-700 ease-out"
       >
         <Card5 />
-      </div>
+      </div> */}
 
       <div 
         ref={el => sectionRefs.current[5] = el}
