@@ -69,7 +69,7 @@ export default function Home() {
       <div 
         ref={el => sectionRefs.current[3] = el}
         id="section-projects" 
-        className="s4-projects bg-[#1a1b26] h-auto sm:h-[150rem] md:h-[200rem] lg:h-[200rem] xl:h-[200rem] flex justify-center opacity-0 translate-y-10 transition-all duration-700 ease-out"
+        className="s4-projects bg-[#1a1b26] h-auto sm:h-[180rem] md:h-[220rem] lg:h-[220rem] xl:h-[220rem] flex justify-center opacity-0 translate-y-10 transition-all duration-700 ease-out"
       >
         <Card4 />
       </div>

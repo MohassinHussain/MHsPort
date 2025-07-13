@@ -7,11 +7,19 @@ function Card1() {
     <div className="flex flex-col md:grid md:grid-cols-2 grid-cols-1 gap-4 w-[80rem] sm:w-[90%] mx-auto mt-5 bg-[#1a1b26] p-8 rounded-lg border border-[#24283b]">
       <div className="flex flex-col justify-center px-4 sm:px-8">
         <h1 className="text-4xl sm:text-5xl font-bold pb-6 text-[#c0caf5]">B Md Mohassin Hussain</h1>
+       {/* <h1 class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#c0caf5] via-[#c0caf5] to-white drop-shadow-[0px_0px_10px_rgba(255,255,255,0.5)]">
+  Glossy Text
+</h1> */}
+
+
+
+
         <p className="text-xl sm:text-2xl text-[#a9b1d6]">Full-stack Developer AI Enthusiast</p>
       </div>
 
       <div className="flex justify-center items-center px-4 sm:px-8">
-        <Image 
+        <Image
+          alt="Image"
           src={im}
           width={400}
           height={500}
