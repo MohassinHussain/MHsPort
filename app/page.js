@@ -53,7 +53,7 @@ export default function Home() {
       <div 
         ref={el => sectionRefs.current[1] = el}
         id="section-about" 
-        className="s2-about bg-[#24283b] h-auto sm:h-[25rem] md:h-[30rem] lg:h-[30rem] xl:h-[30rem] flex justify-center items-center opacity-0 translate-y-10 transition-all duration-700 ease-out"
+        className="s2-about bg-[#24283b] sm:h-[25rem] md:h-[30rem] lg:h-[30rem] xl:h-[30rem] flex justify-center items-center opacity-0 translate-y-10 transition-all duration-700 ease-out"
       >
         <Card2 />
       </div>
@@ -69,7 +69,8 @@ export default function Home() {
       <div 
         ref={el => sectionRefs.current[3] = el}
         id="section-projects" 
-        className="s4-projects bg-[#1a1b26] h-auto sm:h-[180rem] md:h-[220rem] lg:h-[220rem] xl:h-[220rem] flex justify-center opacity-0 translate-y-10 transition-all duration-700 ease-out"
+        // sm:h-[180rem] md:h-[240rem] lg:h-[220rem] xl:h-[220rem]
+        className="s4-projects  bg-[#1a1b26]  h-auto flex justify-center opacity-0 translate-y-10 transition-all duration-700 ease-out"
       >
         <Card4 />
       </div>
@@ -85,7 +86,7 @@ export default function Home() {
       <div 
         ref={el => sectionRefs.current[5] = el}
         id="section-achievements" 
-        className="s6-resume bg-[#1a1b26] h-auto sm:h-[15rem] md:h-[20rem] lg:h-[20rem] xl:h-[20rem] flex justify-center items-center opacity-0 translate-y-10 transition-all duration-700 ease-out"
+        className="s6-resume bg-[#1a1b26] h-auto sm:h-[20rem] md:h-[25rem] lg:h-[25rem] xl:h-[25rem] flex justify-center items-center opacity-0 translate-y-10 transition-all duration-700 ease-out"
       >
         <Card6 />
       </div>

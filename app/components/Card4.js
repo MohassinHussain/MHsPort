@@ -84,9 +84,9 @@ function Card4() {
     },
     {
       number: "5",
-      title: "Globehoppin",
-      description: "Contributed to UI improvements and overall website optimization, enhancing responsiveness with Tailwind CSS for a better mobile experience.",
-      visit: "https://github.com/MohassinHussain/GlobeHoppin",
+      title: "AgroFlo Predictor",
+      description: "A streamlit web-app built using Machine Learning techniques to predict the season suitableity for agriculture and to check the occurence of flood using Randomforest Regressor, classifier.",
+      visit: "https://minirain2.streamlit.app",
     },
     {
       number: "6",
@@ -95,6 +95,14 @@ function Card4() {
       visit: "https://github.com/MohassinHussain/ressa",
       apk: "https://drive.google.com/file/d/1BX2dvCaqppxlvNOFms3ctpKR66H_0YaZ/view?usp=sharing",
       docs: "https://docs.google.com/document/d/1eRYMYS-w1wDfgUjq89birFIH1cUpBctI/edit?usp=sharing&ouid=110889650968495214776&rtpof=true&sd=true"
+    },
+    {
+      number: "7",
+      title: "Camper - A Tool For Recruiters discussion Private",
+      description: "Where multiple different recruiters can discuss about a particular candidate, message discussions, tagging. Real-time Notifications and Global notifications if specific manager is tagged or if the candidate is related to that recruiter as well. ",
+      visit: "https://www.notion.so/Camper-A-Tool-For-Recruiters-Discussion-2475730cdd8780c5a270d0d963bcdc90?source=copy_link",
+      // apk: "https://www.notion.so/Camper-A-Tool-For-Recruiters-Discussion-2475730cdd8780c5a270d0d963bcdc90?source=copy_link",
+      docs: "https://www.notion.so/Camper-A-Tool-For-Recruiters-Discussion-2475730cdd8780c5a270d0d963bcdc90?source=copy_link"
     },
   ];
 
@@ -125,9 +133,9 @@ function Card4() {
     window.addEventListener('keydown', handleEscape);
     return () => window.removeEventListener('keydown', handleEscape);
   }, []);
-
+  // 
   return (
-    <div className="w-full sm:w-[90%] lg:w-[80rem] mx-auto h-auto sm:h-auto bg-[#1a1b26] p-4 sm:p-8 rounded-lg border border-[#24283b]">
+    <div className="w-full sm:w-[90%] lg:w-[80rem] mx-auto bg-[#1a1b26] p-4 sm:p-8 rounded-lg border border-[#24283b]">
       <h1 className="text-4xl sm:text-5xl font-bold mb-10 text-center text-[#c0caf5]">Experience</h1>
 
       <div className="grid grid-cols-1 gap-8 mb-16">
@@ -158,7 +166,7 @@ function Card4() {
           <div
             key={index}
             ref={el => projectRefs.current[index] = el}
-            className="bg-[#24283b] p-4 sm:p-6 rounded-lg border border-[#24283b] hover:border-[#7aa2f7] transition-all transform hover:scale-105 opacity-0 translate-y-10 transition-all duration-700 ease-out"
+            className="bg-[#24283b] p-4 sm:p-6 rounded-lg border border-[#24283b] hover:border-[#7aa2f7] transform hover:scale-105 opacity-0 translate-y-10 transition-all duration-700 ease-out"
           >
             <h2 className="text-4xl sm:text-5xl font-bold text-[#7aa2f7] text-center">{project.number}</h2>
             <h1 className="font-bold text-2xl sm:text-3xl pt-3 sm:pt-4 text-[#c0caf5] text-center">{project.title}</h1>
@@ -324,13 +332,13 @@ function Card4() {
               </p>
             </div>
             <a href="https://drive.google.com/file/d/14HWLdYkInhVeYSHxvw3kgRqp_E2RJXRu/view?usp=sharing">
-            <div className="flex flex-col items-center bg-[#24283b] p-6 rounded-lg border border-[#24283b] hover:border-[#7aa2f7] transition-all duration-300">
-              <IoAccessibility className="text-6xl mb-4 text-[#7aa2f7]" />
-              <h2 className="text-xl font-bold text-[#c0caf5] mb-2">Mentorship</h2>
-              <p className="text-lg text-center text-[#a9b1d6]">
-                Mentored more than 5 teams to complete their projects.
-              </p>
-            </div>
+              <div className="flex flex-col items-center bg-[#24283b] p-6 rounded-lg border border-[#24283b] hover:border-[#7aa2f7] transition-all duration-300">
+                <IoAccessibility className="text-6xl mb-4 text-[#7aa2f7]" />
+                <h2 className="text-xl font-bold text-[#c0caf5] mb-2">Mentorship</h2>
+                <p className="text-lg text-center text-[#a9b1d6]">
+                  Mentored more than 5 teams to complete their projects.
+                </p>
+              </div>
             </a>
             <a href="https://drive.google.com/file/d/13hbmNKMa0-fDhRjAiHMCNHqkCnkU4lyR/view?usp=sharing">
               <div className="flex flex-col items-center bg-[#24283b] p-6 rounded-lg border border-[#24283b] hover:border-[#7aa2f7] transition-all duration-300">
@@ -340,19 +348,19 @@ function Card4() {
                   Hosted a Technical Event, BugRack. Got more than 30 participants.
                 </p>
               </div> </a>
-              <a href="https://drive.google.com/file/d/18ITFakRV16X0d-dKzNdx-pU2yDbRk5EM/view?usp=drive_link">
-            <div className="flex flex-col items-center bg-[#24283b] p-6 rounded-lg border border-[#24283b] hover:border-[#7aa2f7] transition-all duration-300">
-             <IoMdBook className="text-6xl mb-4 text-[#7aa2f7]" />
-              <h2 className="text-xl font-bold text-[#c0caf5] mb-2">Course Completion</h2>
-              <p className="text-lg text-center text-[#a9b1d6]">
-               From Cisco: Achieved Student level credential in Cyber Security. 
-              </p>
-            </div>
+            <a href="https://drive.google.com/file/d/18ITFakRV16X0d-dKzNdx-pU2yDbRk5EM/view?usp=drive_link">
+              <div className="flex flex-col items-center bg-[#24283b] p-6 rounded-lg border border-[#24283b] hover:border-[#7aa2f7] transition-all duration-300">
+                <IoMdBook className="text-6xl mb-4 text-[#7aa2f7]" />
+                <h2 className="text-xl font-bold text-[#c0caf5] mb-2">Course Completion</h2>
+                <p className="text-lg text-center text-[#a9b1d6]">
+                  From Cisco: Achieved Student level credential in Cyber Security.
+                </p>
+              </div>
             </a>
           </div>
         </div>
 
-        <div className="mt-8 sm:mt-10">
+        {/* <div className="mt-8 sm:mt-10">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[#c0caf5] mb-6 sm:mb-10">
             Contact
           </h1>
@@ -383,7 +391,7 @@ function Card4() {
               <span>Email</span>
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

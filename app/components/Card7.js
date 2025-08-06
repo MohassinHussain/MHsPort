@@ -18,7 +18,7 @@ function Card7() {
   }
 
   return (
-    <div className="bg-[#1a1b26] w-full sm:w-[90%] lg:w-[80rem] mx-auto h-auto sm:h-auto p-8 rounded-lg border border-[#24283b]">
+    <div className="bg-[#1a1b26]   w-full sm:w-[90%] lg:w-[80rem] mx-auto h-auto sm:h-auto p-8 rounded-lg border border-[#24283b]">
       <h1 className="text-4xl sm:text-5xl p-10 font-bold text-center text-[#c0caf5]">
         Connect with me!
       </h1>

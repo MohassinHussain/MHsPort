@@ -63,7 +63,7 @@ function Card3() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 m-6">
         {/* Image */}
         <div className="flex justify-center">
-          <Image src={img2} width={500} height={600} className="rounded-md hidden md:flex border-2 border-[#24283b]" />
+          <Image alt="Alt" src={img2} width={500} height={600} className="rounded-md hidden md:flex border-2 border-[#24283b]" />
         </div>
 
         {/* Skills Section */}
