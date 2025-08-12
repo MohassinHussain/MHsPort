@@ -24,7 +24,8 @@ import {
 } from "react-icons/si";
 import { RiFileExcel2Line } from "react-icons/ri";
 
-import img2 from '../../public/img2.png'
+// import img2 from '../../public/img2.png'
+import My_Skills from '../../public/My_Skills.png'
 
 function Card3() {
   const skills = {
@@ -63,7 +64,7 @@ function Card3() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 m-6">
         {/* Image */}
         <div className="flex justify-center">
-          <Image alt="Alt" src={img2} width={500} height={600} className="rounded-md hidden md:flex border-2 border-[#24283b]" />
+          <Image alt="Alt" src={My_Skills} width={500} height={600} className="rounded-md hidden md:flex border-2 border-[#24283b]" />
         </div>
 
         {/* Skills Section */}
