@@ -31,7 +31,7 @@ function Card1() {
         <h1 className="text-4xl sm:text-5xl font-bold text-[#c0caf5]">CMR College of Engineering & Technology</h1>
         <div className="flex flex-col sm:flex-row justify-between mt-12 mb-10 sm:mt-16">
           <p className="text-xl sm:text-2xl mb-4 sm:mb-0 text-[#a9b1d6]">B. Tech in Artificial Intelligence & Machine Learning</p>
-          <p className="text-xl sm:text-2xl text-[#a9b1d6]">Self Developing From Full-stack to AI via Blockchain</p>
+          <p className="text-xl sm:text-2xl text-[#a9b1d6]">❤️ towards Full-stack, AI-ML, LLMs, Open-source, Development, Problem-Solving</p>
         </div>
       </div>
     </div>
