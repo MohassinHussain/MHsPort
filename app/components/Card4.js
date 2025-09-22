@@ -357,6 +357,15 @@ function Card4() {
                 </p>
               </div>
             </a>
+          <a href="https://drive.google.com/file/d/1OJBkIfRatj68fs0NC1EY-YH-yBukYfeM/view?usp=sharing">
+              <div className="flex flex-col items-center bg-[#24283b] p-6 rounded-lg border border-[#24283b] hover:border-[#7aa2f7] transition-all duration-300">
+                <IoMdBook className="text-6xl mb-4 text-[#7aa2f7]" />
+                <h2 className="text-xl font-bold text-[#c0caf5] mb-2">Course Completion</h2>
+                <p className="text-lg text-center text-[#a9b1d6]">
+                  From Oracle: OCI Certified 2025 Gen AI Professional.
+                </p>
+              </div>
+            </a>
           </div>
         </div>
 
