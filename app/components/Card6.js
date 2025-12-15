@@ -8,14 +8,14 @@ function Card6() {
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 justify-around m-6 gap-6">
         {/* View My Resume Card */}
-        <a target="_blank" href="https://drive.google.com/file/d/149P1GfROb4EqX0wLp0CN8KPOfpWdXDUu/view?usp=sharing" className="p-6 bg-[#24283b] rounded-lg border border-[#24283b] hover:bg-[#7aa2f7] transition-all duration-300 transform hover:scale-105 shadow-md" >
+        <a target="_blank" href="https://drive.google.com/file/d/1GNHIMnAbZqG5xBDBCDo7_V1zGpidviEp/view?usp=sharing" className="p-6 bg-[#24283b] rounded-lg border border-[#24283b] hover:bg-[#7aa2f7] transition-all duration-300 transform hover:scale-105 shadow-md" >
           <p className="text-[1.5rem] text-center text-[#c0caf5] hover:text-[#1a1b26] transition-all duration-300 transform hover:scale-105">
             View My Resume
           </p>
         </a>
 
         {/* Download My Resume Format Card */}
-        <a target="_blank" href="https://drive.google.com/file/d/1kEBEMc42jfbQVm0AdtvcppJhcwqdXP76/view?usp=sharing">
+        <a target="_blank" href="https://drive.google.com/file/d/1M_qOyrU1w5hl-WuRalkiDAihJjJqYWcl/view?usp=sharing">
         <div className="p-6 bg-[#24283b] rounded-lg border border-[#24283b] hover:bg-[#7aa2f7] transition-all duration-300 transform hover:scale-105 shadow-md">
           <p className="text-[1.5rem] text-center text-[#c0caf5] hover:text-[#1a1b26] transition-all duration-300 transform hover:scale-105">
             Download My Resume Format
