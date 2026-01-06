@@ -9,6 +9,9 @@ import {
     CardTitle,
 } from "@/components/ui/card"
 
+import { FaArrowTrendUp } from "react-icons/fa6";
+
+
 function Achievements() {
     return (
         <Card className="w-full sm:w-[90%] lg:w-[80rem] mx-auto bg-[#1a1b26] p-4 sm:p-8 rounded-lg border-2 border-[#24283b] shadow-none">
@@ -59,6 +62,15 @@ function Achievements() {
                             <h2 className="text-xl font-bold text-[#c0caf5] mb-2">Course Completion</h2>
                             <p className="text-lg text-center text-[#a9b1d6]">
                                 From Oracle: OCI Certified 2025 Gen AI Professional.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1CI1n28tfN4GAp5rSgXNQYccldy7WU032/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                        <div className="flex flex-col items-center bg-[#24283b] p-6 rounded-lg border border-[#24283b] hover:border-[#7aa2f7] transition-all duration-300">
+                            <FaArrowTrendUp className="text-6xl mb-4 text-[#7aa2f7]" />
+                            <h2 className="text-xl font-bold text-[#c0caf5] mb-2">Place in the Pre-Finale aidothon 4.0</h2>
+                            <p className="text-lg text-center text-[#a9b1d6]">
+                                aidKRIYA Walker App Challenge 2025
                             </p>
                         </div>
                     </a>

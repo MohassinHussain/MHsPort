@@ -270,15 +270,36 @@ function Card4() {
 
                 {/* Tech Stack Badge Button - Shows on hover too */}
                 {project.techStack && (
-                  <button
-                    onMouseEnter={() => setSelectedTechStack(project.techStack)}
-                    onMouseLeave={() => setSelectedTechStack(null)}
-                    className="flex items-center gap-2 px-4 py-2 bg-[#1a1b26] border border-[#7aa2f7]/50 rounded-full text-[#7aa2f7] hover:bg-[#7aa2f7] hover:text-[#1a1b26] transition-all duration-300"
-                    title="Hover to View Tech Stack"
-                  >
-                    <Layers size={18} />
-                    <span className="text-sm font-semibold">Tech Stack</span>
-                  </button>
+                  <div className="relative inline-block">
+                    <button
+                      onMouseEnter={() => setSelectedTechStack(project.title)} // Using title as unique ID
+                      onMouseLeave={() => setSelectedTechStack(null)}
+                      className="flex items-center gap-2 px-4 py-2 bg-[#1a1b26] border border-[#7aa2f7]/50 rounded-full text-[#7aa2f7] hover:bg-[#7aa2f7] hover:text-[#1a1b26] transition-all duration-300"
+                    // title="Hover to View Tech Stack"
+                    >
+                      <Layers size={18} />
+                      <span className="text-sm font-semibold">Tech Stack</span>
+                    </button>
+
+                    {/* Tech Stack Hover Popup */}
+                    {selectedTechStack === project.title && (
+                      <div
+                        className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-[18rem] bg-[#1a1b26]/95 backdrop-blur-md border border-[#7aa2f7]/50 rounded-xl p-4 shadow-xl z-50 animate-in fade-in zoom-in-95 duration-200 pointer-events-none"
+                      >
+                        <h3 className="text-[#c0caf5] font-bold text-center mb-3 border-b border-[#24283b] pb-2">Tech Stack</h3>
+                        <div className="flex flex-wrap justify-center gap-4">
+                          {project.techStack.map((tech, i) => (
+                            <div key={i} className="flex flex-col items-center gap-1">
+                              <div className="text-2xl text-[#a9b1d6]">{tech.icon}</div>
+                              <span className="text-xs text-[#c0caf5]">{tech.name}</span>
+                            </div>
+                          ))}
+                        </div>
+                        {/* Arrow */}
+                        <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-2 border-8 border-transparent border-t-[#7aa2f7]/50"></div>
+                      </div>
+                    )}
+                  </div>
                 )}
 
               </div>
@@ -442,34 +463,7 @@ function Card4() {
             </div>
           )}
 
-          {/* Modal for Tech Stack */}
-          {selectedTechStack && (
-            <div
-              className="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none"
-            >
-              <div
-                className="bg-[#1a1b26]/95 backdrop-blur-md border-2 border-[#24283b] rounded-2xl p-8 max-w-2xl w-full shadow-2xl transform transition-all scale-100 animate-in fade-in zoom-in-95 duration-200"
-              >
-                <div className="flex justify-between items-center mb-8">
-                  <h2 className="text-3xl font-bold text-[#c0caf5]">Technology Stack</h2>
-                </div>
 
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
-                  {selectedTechStack.map((tech, index) => (
-                    <div
-                      key={index}
-                      className="flex flex-col items-center justify-center p-6 bg-[#24283b] rounded-xl border border-[#24283b] transition-all duration-300"
-                    >
-                      <div className="text-5xl mb-4 text-[#a9b1d6]">
-                        {tech.icon}
-                      </div>
-                      <span className="text-lg font-medium text-[#c0caf5] text-center">{tech.name}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          )}
 
         </div>
 

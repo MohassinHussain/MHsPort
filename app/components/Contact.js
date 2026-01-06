@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from "react";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { MdOutgoingMail } from "react-icons/md";
 import {
   Card,
@@ -9,17 +9,36 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import { FaX } from "react-icons/fa6";
 
 function Card7() {
   const [from, setFrom] = useState("");
-  const [to, setTo] = useState("");
+  const [subject, setSubject] = useState("");
   const [msg, setMsg] = useState("")
 
   const sendMail = (e) => {
     e.preventDefault();
-    console.log(from);
-    console.log(msg);
+    const mailtoLink = `mailto:mohassinhussain22@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(msg + "\n\nFrom: " + from)}`;
+    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=mohassinhussain22@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(msg + "\n\nFrom: " + from)}`;
+
+    // Attempt to open mail client
+    window.location.href = mailtoLink;
+
+    // Fallback: If focus isn't lost (meaning no app opened/dialog shown) after a delay, open Gmail in browser
+    // Note: This is a best-effort check. 'blur' fires when the window loses focus (e.g. to an external app).
+    let isBlur = false;
+    const onBlur = () => { isBlur = true; };
+    window.addEventListener("blur", onBlur);
+
+    setTimeout(() => {
+      window.removeEventListener("blur", onBlur);
+      if (!isBlur) {
+        window.open(gmailLink, '_blank');
+      }
+    }, 1500);
+
     setFrom("");
+    setSubject("");
     setMsg("");
   }
 
@@ -49,6 +68,12 @@ function Card7() {
                 mohassin_hussain03
               </p>
             </a>
+            <a href="https://x.com/MohassinHs3" className="flex items-center hover:bg-[#3d4b69] rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md">
+              <FaTwitter className="mr-5" />
+              <p className="text-lg sm:text-2xl bg-[#1a1b26] p-2 rounded-md">
+                MohassinHs3
+              </p>
+            </a>
             <a href="https://linkedin.com/in/mohassinhussain" className="flex items-center hover:bg-[#3d4b69] rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md">
               <FaLinkedin className="mr-5" />
               <p className="text-lg sm:text-2xl bg-[#1a1b26] p-2 rounded-md">
@@ -75,11 +100,20 @@ function Card7() {
             required
             onChange={(e) => setFrom(e.target.value)}
           />
+          <input
+            type='text'
+            placeholder="Subject..."
+            className="p-3 rounded-md bg-[#1a1b26] w-full sm:w-3/4 mb-4 text-[#c0caf5] border border-[#24283b]"
+            value={subject}
+            required
+            onChange={(e) => setSubject(e.target.value)}
+          />
           <textarea
             className="p-3 rounded-md bg-[#1a1b26] w-full sm:w-3/4 resize-none text-[#c0caf5] border border-[#24283b]"
             placeholder="Enter your content here.."
             value={msg}
             onChange={(e) => setMsg(e.target.value)}
+            rows={4}
           ></textarea>
           <button className="self-center sm:self-start mt-4 p-3 rounded-md bg-[#1a1b26] hover:bg-[#7aa2f7] hover:text-[#1a1b26] transition-colors font-bold text-[#c0caf5] border border-[#24283b]" onClick={sendMail}>
             Send

@@ -26,7 +26,9 @@ import {
   FaArrowAltCircleRight,
   FaFileExcel,
   FaFilePowerpoint,
-  FaFileWord
+  FaFileWord,
+  FaGithub,
+  FaGitAlt
 } from "react-icons/fa";
 import {
   Card,
@@ -34,29 +36,36 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import { TbBrandCpp, TbBrandReactNative } from "react-icons/tb";
+
+import { VscVscode } from "react-icons/vsc";
+import { BiLogoMongodb } from "react-icons/bi";
+
+
 
 // import img2 from '../../public/img2.png'
 import My_Skills from '../../public/My_Skills.png'
+import { SiExpress, SiHuggingface, SiN8N, SiNextdotjs, SiPostman, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 function Card3() {
   const skills = {
     languages: [
       { icon: <FaJava />, name: 'Java' },
       { icon: <FaPython />, name: 'Python' },
-      { icon: <FaCode />, name: 'C++' },
+      { icon: <TbBrandCpp />, name: 'C++' },
       { icon: <FaJs />, name: 'JavaScript' },
-      { icon: <FaCode />, name: 'TypeScript' },
+      { icon: <SiTypescript />, name: 'TypeScript' },
       { icon: <FaHtml5 />, name: 'HTML' },
       { icon: <FaCss3 />, name: 'CSS' },
       { icon: <FaDatabase />, name: 'SQL' },
     ],
     frameworks: [
       { icon: <FaReact />, name: 'React.js' },
-      { icon: <FaArrowAltCircleRight />, name: 'Next.js' },
-      { icon: <FaMobileAlt />, name: 'React Native' },
-      { icon: <FaWind />, name: 'Tailwind CSS' },
+      { icon: <SiNextdotjs />, name: 'Next.js' },
+      { icon: <TbBrandReactNative />, name: 'React Native' },
+      { icon: <SiTailwindcss />, name: 'Tailwind CSS' },
       { icon: <FaNodeJs />, name: 'Node.js' },
-      { icon: <FaServer />, name: 'Express.js' },
+      { icon: <SiExpress />, name: 'Express.js' },
       { icon: <FaPython />, name: 'Django' },
     ],
     blockchain: [
@@ -65,16 +74,18 @@ function Card3() {
       { icon: <FaNetworkWired />, name: 'IPFS' },
     ],
     tools: [
-      { icon: <FaGit />, name: 'Git' },
+      { icon: <FaGitAlt />, name: 'Git' },
+      { icon: <FaGithub />, name: 'GitHub' },
       { icon: <FaDocker />, name: 'Docker' },
-      { icon: <FaRobot />, name: 'HuggingFace' },
+      { icon: <SiHuggingface />, name: 'HuggingFace' },
       { icon: <FaFire />, name: 'Firebase' },
-      { icon: <FaCode />, name: 'VS Code' },
-      { icon: <FaPaperPlane />, name: 'Postman' },
-      { icon: <FaEnvira />, name: 'MongoDB' },
-      { icon: <FaCogs />, name: 'n8n' },
+      { icon: <VscVscode />, name: 'VS Code' },
+      { icon: <SiPostman />, name: 'Postman' },
+      { icon: <BiLogoMongodb />, name: 'MongoDB' },
+      { icon: <SiN8N />, name: 'n8n' },
     ],
     coursework: [
+      { name: 'Data Structures & Algorithms DSA' },
       { name: 'Operating Systems' },
       { name: 'Computer Networks' },
       { name: 'DBMS' },
