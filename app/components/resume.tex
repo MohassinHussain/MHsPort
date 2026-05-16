@@ -1,0 +1,291 @@
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Mohassin Hussain Badesab Mohammed  } \\ \vspace{1pt}
+    \small \underline{+91 9676940969} $|$ \href{mailto:mohassinhussain22@gmail.com}{\underline{mohassinhussain22@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/mohassinhussain}{\underline{linkedin.com/in/mohassinhussain}} $|$
+    \href{https://github.com/MohassinHussain}{\underline{github.com/MohassinHussain}}
+    \href{https://bmhs.vercel.app}{\underline{https://bmhs.vercel.app}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {CMR College of Engineering \& Technology}{Kandlakoya, Telangana}
+      {Bachelor of Technology in AI \& ML - CGPA: 8.8}{Nov. 2022 -- Jul 2026}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Data Analyst – Internship}{Jan 2026 -- Present}
+      {Zoetis Tech \& Digital (ZICC)}{}
+      \resumeItemListStart
+        \resumeItem{Data Analyst delivering actionable insights and measurable value to the team.}
+\resumeItem{Built a robust full-stack Data Validation web based tool for smoother and effective data validation.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+% \section{Projects}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{\href{https://github.com/MohassinHussain/bFinder}{\underline{bFinder}}} $|$ \emph{React Native, Redux, Firebase, Clerk Auth}}{}
+%           \resumeItemListStart
+%             \resumeItem{Developed an application to help users find suitable locations for business.}
+%             \resumeItem{Built-in AI analyzer for predicting the business success rate in an area.}
+%           \resumeItemListEnd
+%       \resumeProjectHeading
+%           {\textbf{\href{https://drive.google.com/file/d/1BX2dvCaqppxlvNOFms3ctpKR66H_0YaZ/view?usp=sharing}{\underline{Ressa}}} $|$ \emph{React Native(Expo), TF-IDF cosine similarity, Flask}}{}
+%           \resumeItemListStart
+%             \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+%             \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+%             \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+%             \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+% \resumeProjectHeading
+%     {\textbf{\href{https://github.com/MohassinHussain/bFinder}{\underline{bFinder}}} $|$ \emph{React Native, Redux, Firebase, Clerk Auth}}{}
+%     \resumeItemListStart
+%         \resumeItem{Developed an application to help users find suitable locations for business.}
+%         \resumeItem{Built-in AI analyzer for predicting the business success rate in an area.}
+%         \textbf{\resumeItem{Demo Working video: \href{https://drive.google.com/file/d/1JIrL9oQFk02JW2hkQQ8t3c1O50aOuSzH/view}{Link}}}
+%     \resumeItemListEnd
+
+% \resumeProjectHeading
+%     {\textbf{\href{https://github.com/MohassinHussain/Fake_Logo_Detection_Team-13}{\underline{Fake Logo Detection}}} $|$ \emph{Python, CNN, Deep Learning, TKinter}}{}
+%     \resumeItemListStart
+%         \resumeItem{Optimized image detection and classification using CNN for image processing.}
+%     \resumeItemListEnd
+
+
+
+\resumeProjectHeading
+    {\textbf{\href{https://www.notion.so/Cowsie-An-actual-collaborative-white-board-with-AI-assistance-3625730cdd8780d0b563cd0253dd0f4a?source=copy_link}{\underline{cowise -- Collaborative Whiteboard}}} $|$ \emph{Next.js, FastAPI, WebSockets, MongoDB, Firebase}}{}
+    \resumeItemListStart
+        \resumeItem{Developed a real-time collaborative whiteboard platform to solve the lack of persistent, interactive remote visual workspaces. Engineered live drawing synchronization using WebSockets and FastAPI, ensuring high-performance, low-latency collaboration.}
+        % \resumeItem{}
+        \resumeItem{Built a responsive Next.js frontend with integrated Firebase chat and MongoDB storage for seamless multi-user design sessions.}
+    \resumeItemListEnd
+
+\resumeProjectHeading
+    {\textbf{\href{https://www.notion.so/Megidoc-Get-git-Documented-3255730cdd87803cb1c6e9b72f534026?source=copy_link}{\underline{megidoc – Get git documented}}} $|$ \emph{Next.js, TailwindCSS, Gemini AI, GitHub API}}{}
+    \resumeItemListStart
+        \resumeItem{Addressed the challenge of manual project documentation by building a platform to instantly generate technical docs from GitHub repositories.}
+        \resumeItem{Integrated Openrouter free model gpt-oss-120b as formatting and reasoning engine and to stream markdown generation in real-time, leveraging Next.js API routes for fast, server-side execution.}
+        \resumeItem{Delivered an intuitive, theme-aware UI with Radix UI, enabling developers to effortlessly preview, edit, and export structured documentation.}
+    \resumeItemListEnd
+
+\resumeProjectHeading
+    {\textbf{\href{https://github.com/MohassinHussain/SCFFL}{\underline{SCFFL – Smart City Fresh Food Logistics}}} $|$ \emph{Python, LSTM, Hybrid IQPSO-SA, Next.js}}{}
+    \resumeItemListStart
+        \resumeItem{Tackled urban perishable food waste by building an intelligent, data-driven logistics platform for optimized delivery routing. }
+        \resumeItem{Integrated LSTM networks for traffic prediction and a Hybrid IQPSO-SA algorithm, reducing overall distribution costs by 8.83\%.}
+        \resumeItem{\textbf{Documentation \& Research Paper: \href{https://drive.google.com/file/d/1I0esLbiFlOXEO2mjH7dMJTtryj6h-4dD/view?usp=sharing}{\underline{Link}}}}
+    \resumeItemListEnd
+
+\resumeProjectHeading
+    {\textbf{\href{https://github.com/MohassinHussain/fylz}{\underline{fylz – Temporary File \& Text Sharing}}} $|$ \emph{React.js, Node.js, Express, MongoDB, JWT}}{}
+    \resumeItemListStart
+        \resumeItem{Solved temporary file sharing privacy concerns by creating a secure platform with automatic 5-minute data expiration.}
+        \resumeItem{Developed a backend using Node.js, Express, and MongoDB TTL indexing to manage access codes and multipart file uploads. \textbf{Live: \href{https://fylz.vercel.app}{\underline{fylz.vercel.app}} $|$ GitHub: \href{https://github.com/MohassinHussain/fylz}{\underline{Link}}}}
+        % \resumeItem{}
+    \resumeItemListEnd
+
+
+% \resumeProjectHeading
+%     {\textbf{\href{https://github.com/MohassinHussain/inApp-share}{\underline{inApp-Share (iAS)}}} $|$ \emph{React.js, Tailwind CSS, MongoDB, Firebase Auth, Node.js}}{}
+%     \resumeItemListStart
+%         \resumeItem{Built a feature for a YouTube-like video streaming platform without relying on external platforms for sharing content.}
+%        \textbf{\resumeItem{Demo: \href{https://drive.google.com/file/d/1JNOaXq6rEnhggqHGHZ8rXgMewm3inXKP/view?usp=sharing}{Link}}}
+%     \resumeItemListEnd
+
+
+% \resumeProjectHeading
+%     {\textbf{Others} $|$ \emph{LLMs, HuggingFace, Docker model runner, Personal File Analyzer, Personal Researcher agent using n8n}}{}
+%     \resumeItemListStart
+%         \resumeItem{Practiced various AI and automation tools using docker including LLMs and Models.}
+%     \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+% \section{Technical Skills}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
+%      \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+%      \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+%      \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+%     }}
+%  \end{itemize}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Data Analytics \& Engineering }{: Azure Data Engineering, ETL, Power BI, Databricks, pyspark} \\
+    % \textbf{} \\
+    \textbf{Coursework}{: OS, DBMS, Machine Learning and AI, Data Structures \& Algorithms} \\
+     \textbf{Languages}{: Java, Python, C/C++, JavaScript \& TypeScript, SQL, HTML, CSS} \\
+     \textbf{Libraries/Frameworks}{: React.js, React Native, Next.js, Tailwind CSS, Node.js, Express.js, Django, Redis} \\
+     % \textbf{Blockchain Technologies}{: Solidity, Ether.js, IPFS, Distributed Networks} \\
+     \textbf{Developer Tools/Platforms}{: Git, Docker, HuggingFace, Firebase, VS Code} \\
+     \textbf{Databases}{: MongoDB, MySQL, Firebase, Supabase} \\
+     \textbf{Others}{: GenAI, LLMs, n8n, ollama, open-source} \\
+     
+    }}
+\end{itemize}
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     
+     \textbf{\href{https://drive.google.com/file/d/1CI1n28tfN4GAp5rSgXNQYccldy7WU032/view?usp=sharing}{National Finalist}}{: Secured 13th place in aidKriya walker app challenge 2025 among 1000+ participants across India as a solo participant.} \\
+     \textbf{\href{https://drive.google.com/file/d/1OJBkIfRatj68fs0NC1EY-YH-yBukYfeM/view?usp=sharing}{Oracle Certified Professional}}{: OCI Certified 2025 Gen AI Professional.} \\
+     \textbf{\href{https://drive.google.com/file/d/18ITFakRV16X0d-dKzNdx-pU2yDbRk5EM/view}{Cisco}}{: Certified in Fundamentals of Cybersecurity Student Level Credential.} \\
+     % \textbf{GSSoC Contributor}{: Contributed to 2 projects under GSSoC extd. 2024.} \\
+     \textbf{\href{https://drive.google.com/file/d/1WoZc-BCXvqFgudEGnLf65S5UxVWlj6rH/view?usp=sharing}{Mentorship}}{: Mentored more than 5 teams to complete their projects.} \\
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}

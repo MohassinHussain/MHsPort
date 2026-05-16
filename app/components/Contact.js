@@ -49,7 +49,8 @@ function Card7() {
           Connect with me!
         </CardTitle>
       </CardHeader>
-      <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-6 m-6 pt-0">
+      {/* <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-6 m-6 pt-0"> */}
+      <CardContent className="grid grid-cols-1 sm:grid-cols-1 gap-6 m-6 pt-0">
         {/* Connection Platforms Section */}
         <div className="bg-[#24283b] p-6 rounded-lg border border-[#24283b]">
           <h1 className="text-3xl font-bold mb-6 text-center text-[#c0caf5]">
@@ -90,7 +91,7 @@ function Card7() {
         </div>
 
         {/* Mail Form Section */}
-        <div className="bg-[#24283b] p-6 rounded-lg flex flex-col border border-[#24283b]">
+        {/* <div className="bg-[#24283b] p-6 rounded-lg flex flex-col border border-[#24283b]">
           <h1 className="text-3xl font-bold mb-6 text-center text-[#c0caf5]">Do Mail</h1>
           <input
             type='email'
@@ -118,7 +119,7 @@ function Card7() {
           <button className="self-center sm:self-start mt-4 p-3 rounded-md bg-[#1a1b26] hover:bg-[#7aa2f7] hover:text-[#1a1b26] transition-colors font-bold text-[#c0caf5] border border-[#24283b]" onClick={sendMail}>
             Send
           </button>
-        </div>
+        </div> */}
       </CardContent>
     </Card>
   );

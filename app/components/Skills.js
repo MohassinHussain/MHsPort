@@ -28,7 +28,9 @@ import {
   FaFilePowerpoint,
   FaFileWord,
   FaGithub,
-  FaGitAlt
+  FaGitAlt,
+  FaChartBar,
+  FaBrain
 } from "react-icons/fa";
 import {
   Card,
@@ -90,6 +92,21 @@ function Card3() {
       { name: 'Computer Networks' },
       { name: 'DBMS' },
       { name: 'Software Engineering' },
+    ],
+    dataAnalytics: [
+      { icon: <FaDatabase />, name: 'Azure Data Engineering' },
+      { icon: <FaCogs />, name: 'ETL' },
+      { icon: <FaChartBar />, name: 'Power BI' },
+      { icon: <FaServer />, name: 'Databricks' },
+      { icon: <FaPython />, name: 'PySpark' },
+    ],
+    genAI: [
+      { icon: <FaRobot />, name: 'GenAI' },
+      { icon: <FaBrain />, name: 'LLMs' },
+      { icon: <SiN8N />, name: 'n8n' },
+      { icon: <FaServer />, name: 'Ollama' },
+      { icon: <FaCube />, name: 'Open & Closed Source Models' },
+      { icon: <FaCogs />, name: 'Context & Prompt Engineering' },
     ]
   };
 
@@ -159,6 +176,32 @@ function Card3() {
               {skills.coursework.map((skill, index) => (
                 <div key={index} className="bg-[#24283b] px-4 py-2 rounded-lg border border-[#24283b] hover:border-[#7aa2f7] transition-all">
                   <p className="text-lg text-[#c0caf5]">{skill.name}</p>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+
+          {/* Data Analytics & Engineering */}
+          <CardContent className="pb-12 p-0 w-full">
+            <h2 className="text-3xl sm:text-4xl mt-4 mb-6 text-[#c0caf5] text-center sm:text-left">Data Analytics & Engineering</h2>
+            <div className="flex flex-wrap gap-8 justify-center sm:justify-start">
+              {skills.dataAnalytics.map((skill, index) => (
+                <div key={index} className="flex flex-col items-center gap-2 text-[#7aa2f7]">
+                  <div className="text-4xl sm:text-5xl">{skill.icon}</div>
+                  <p className="text-lg text-[#a9b1d6] text-center">{skill.name}</p>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+
+          {/* Generative AI */}
+          <CardContent className="pb-12 p-0 w-full">
+            <h2 className="text-3xl sm:text-4xl mt-4 mb-6 text-[#c0caf5] text-center sm:text-left">Generative AI</h2>
+            <div className="flex flex-wrap gap-8 justify-center sm:justify-start">
+              {skills.genAI.map((skill, index) => (
+                <div key={index} className="flex flex-col items-center gap-2 text-[#7aa2f7]">
+                  <div className="text-4xl sm:text-5xl">{skill.icon}</div>
+                  <p className="text-lg text-[#a9b1d6] text-center max-w-[150px]">{skill.name}</p>
                 </div>
               ))}
             </div>

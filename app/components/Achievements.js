@@ -68,9 +68,9 @@ function Achievements() {
                     <a href="https://drive.google.com/file/d/1CI1n28tfN4GAp5rSgXNQYccldy7WU032/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                         <div className="flex flex-col items-center bg-[#24283b] p-6 rounded-lg border border-[#24283b] hover:border-[#7aa2f7] transition-all duration-300">
                             <FaArrowTrendUp className="text-6xl mb-4 text-[#7aa2f7]" />
-                            <h2 className="text-xl font-bold text-[#c0caf5] mb-2">Place in the Pre-Finale aidothon 4.0</h2>
+                            <h2 className="text-xl font-bold text-[#c0caf5] mb-2">National Finalist</h2>
                             <p className="text-lg text-center text-[#a9b1d6]">
-                                aidKRIYA Walker App Challenge 2025
+                                13th place in aidKriya walker app challenge 2025 among 1000+ participants.
                             </p>
                         </div>
                     </a>

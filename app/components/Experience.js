@@ -3,7 +3,7 @@ import Image from "next/image";
 import { MdOutlinePersonalVideo, MdOutlineEmojiEvents } from "react-icons/md";
 import { IoMdBook } from "react-icons/io";
 import { IoAccessibility, IoClose } from "react-icons/io5";
-import { FaLinkedin, FaGithub, FaEnvelope, FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3, FaDatabase, FaAndroid, FaAppStore } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope, FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3, FaDatabase, FaAndroid, FaAppStore, FaNetworkWired, FaRobot, FaCode } from "react-icons/fa";
 import { SiMongodb, SiExpress, SiTailwindcss, SiFirebase, SiClerk, SiTensorflow, SiStreamlit, SiScikitlearn, SiFlutter, SiNextdotjs } from "react-icons/si";
 import { ChevronDown, ChevronUp, Layers } from "lucide-react";
 import {
@@ -69,9 +69,47 @@ function Card4() {
   const projects = [
     {
       number: "1",
+      title: "cowise - Collaborative Whiteboard",
+      description: "Developed a real-time collaborative whiteboard platform to solve the lack of persistent, interactive remote visual workspaces. Engineered live drawing synchronization using WebSockets and FastAPI, ensuring high-performance, low-latency collaboration.",
+      visit: "https://www.notion.so/Cowsie-An-actual-collaborative-white-board-with-AI-assistance-3625730cdd8780d0b563cd0253dd0f4a?source=copy_link",
+      techStack: [
+        { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
+        { name: "FastAPI", icon: <FaPython className="text-[#009688]" /> },
+        { name: "WebSockets", icon: <FaNetworkWired className="text-[#FF9800]" /> },
+        { name: "MongoDB", icon: <SiMongodb className="text-[#47A248]" /> },
+        { name: "Firebase", icon: <SiFirebase className="text-[#FFCA28]" /> },
+      ]
+    },
+    {
+      number: "2",
+      title: "megidoc – Get git documented",
+      description: "Addressed the challenge of manual project documentation by building a platform to instantly generate technical docs from GitHub repositories. Integrated AI as formatting and reasoning engine to stream markdown generation in real-time.",
+      visit: "https://www.notion.so/Megidoc-Get-git-Documented-3255730cdd87803cb1c6e9b72f534026?source=copy_link",
+      techStack: [
+        { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
+        { name: "TailwindCSS", icon: <SiTailwindcss className="text-[#06B6D4]" /> },
+        { name: "Gemini AI", icon: <FaRobot className="text-[#4285F4]" /> },
+        { name: "GitHub API", icon: <FaGithub className="text-white" /> },
+      ]
+    },
+    {
+      number: "3",
+      title: "SCFFL",
+      description: "Tackled urban perishable food waste by building an intelligent, data-driven logistics platform for optimized delivery routing. Integrated LSTM networks for traffic prediction and a Hybrid IQPSO-SA algorithm, reducing overall distribution costs by 8.83%.",
+      visit: "https://github.com/MohassinHussain/SCFFL",
+      docs: "https://drive.google.com/file/d/1I0esLbiFlOXEO2mjH7dMJTtryj6h-4dD/view?usp=sharing",
+      techStack: [
+        { name: "Python", icon: <FaPython className="text-[#3776AB]" /> },
+        { name: "LSTM", icon: <Layers className="text-[#FF6F00]" /> },
+        { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
+      ]
+    },
+    {
+      number: "4",
       title: "FYLz",
       description: "Developed a secure file-sharing platform using React.js with Multer for multipart data handling and MongoDB for storage, ensuring temporary file storage and automatic deletion.",
       visit: "https://fylz.vercel.app",
+      docs: "https://github.com/MohassinHussain/fylz",
       techStack: [
         { name: "React.js", icon: <FaReact className="text-[#61DAFB]" /> },
         { name: "Node.js", icon: <FaNodeJs className="text-[#339933]" /> },
@@ -80,7 +118,7 @@ function Card4() {
       ]
     },
     {
-      number: "2",
+      number: "5",
       title: "bFinder",
       description:
         "Created a React Native expo app for location discovery, integrating Firebase for real-time database and authentication, using Clerk Auth for secure user management.",
@@ -92,7 +130,7 @@ function Card4() {
       ]
     },
     {
-      number: "3",
+      number: "6",
       title: "Fake Logo Detection",
       description: "Built a CNN-based algorithm to classify logos as authentic or fake, optimized for real-time classification, and created an intuitive Tkinter GUI for user interaction.",
       visit: "https://github.com/MohassinHussain/Fake_Logo_Detection_Team-13",
@@ -103,7 +141,7 @@ function Card4() {
       ]
     },
     {
-      number: "4",
+      number: "7",
       title: "inApp-Share",
       description: "Built a prototype(YouTube) for in-app video sharing with a responsive UI using Tailwind CSS, integrated Firebase Authentication (Gmail login) for secure access, and used MongoDB to store and retrieve video metadata.",
       visit: "https://drive.google.com/file/d/1JNOaXq6rEnhggqHGHZ8rXgMewm3inXKP/view?usp=sharing",
@@ -115,7 +153,7 @@ function Card4() {
       ]
     },
     {
-      number: "5",
+      number: "8",
       title: "AgroFlo Predictor",
       description: "A streamlit web-app built using Machine Learning techniques to predict the season suitableity for agriculture and to check the occurence of flood using Randomforest Regressor, classifier.",
       visit: "https://minirain2.streamlit.app",
@@ -126,7 +164,7 @@ function Card4() {
       ]
     },
     {
-      number: "6",
+      number: "9",
       title: "Ressa",
       description: "Ressa is one stop mobile app to store and use the resources whenver needed. Store-use and revise, schedule your required resources, pin them to calendar.",
       visit: "https://github.com/MohassinHussain/ressa",
@@ -138,7 +176,7 @@ function Card4() {
       ]
     },
     {
-      number: "7",
+      number: "10",
       title: "Camper",
       description: "A Tool For Recruiters discussion Private. Where multiple different recruiters can discuss about a particular candidate, message discussions, tagging. Real-time Notifications and Global notifications if specific manager is tagged or if the candidate is related to that recruiter as well. ",
       visit: "https://www.notion.so/Camper-A-Tool-For-Recruiters-Discussion-2475730cdd8780c5a270d0d963bcdc90?source=copy_link",
@@ -151,7 +189,7 @@ function Card4() {
       ]
     },
     {
-      number: "8",
+      number: "11",
       title: "PrompterPerformer(PP)",
       description: "A Structured Prompt Orchestration for LLMs. A tool to improve and structure, refine and suggest you a prompt for LLMs and chatbots for content generations and enhancement.",
       visit: "#",
@@ -210,6 +248,15 @@ function Card4() {
       <CardContent className="p-0">
         <div className="grid grid-cols-1 gap-8 mb-16">
           <div className="bg-[#24283b] p-6 rounded-lg border border-[#24283b] hover:border-[#7aa2f7] transition-all duration-300">
+            <h2 className="text-2xl font-bold text-[#c0caf5] mb-2">Zoetis Tech & Digital (ZICC) — Data Analyst Internship</h2>
+            <p className="text-[#a9b1d6] mb-4">[Jan/2026 – Present]</p>
+            <ul className="list-disc list-inside text-[#a9b1d6] space-y-2">
+              <li>Data Analyst delivering actionable insights and measurable value to the team.</li>
+              <li>Built a robust full-stack Data Validation web based tool for smoother and effective data validation.</li>
+            </ul>
+          </div>
+
+          <div className="bg-[#24283b] p-6 rounded-lg border border-[#24283b] hover:border-[#7aa2f7] transition-all duration-300">
             <h2 className="text-2xl font-bold text-[#c0caf5] mb-2">Freelancer — Frontend Developer, SEO & Product Manager</h2>
             <p className="text-[#a9b1d6] mb-4">Anonymous Service-Based Organization (Dental Clinic Project) [Jan/2025 – Mar/2025]</p>
             <ul className="list-disc list-inside text-[#a9b1d6] space-y-2">
@@ -245,27 +292,36 @@ function Card4() {
               </div>
               <div className="mt-4 sm:mt-6 flex flex-col items-center gap-3">
                 <div className="flex gap-4">
-                  {project.apk && project.docs ? <>
+                  {project.visit && (
+                    <a
+                      href={project.visit}
+                      className="inline-block underline text-[#7aa2f7] text-lg sm:text-xl hover:text-[#bb9af7] transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {project.visit.includes('github.com') ? 'GitHub' : 'View Project'}
+                    </a>
+                  )}
+                  {project.apk && (
                     <a
                       href={project.apk}
                       className="inline-block underline text-[#7aa2f7] text-lg sm:text-xl hover:text-[#bb9af7] transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
-                    >Download apk</a>
+                    >
+                      Download apk
+                    </a>
+                  )}
+                  {project.docs && (
                     <a
                       href={project.docs}
                       className="inline-block underline text-[#7aa2f7] text-lg sm:text-xl hover:text-[#bb9af7] transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
-                    >Docs</a>
-                  </>
-                    : <a
-                      href={project.visit}
-                      className="inline-block underline text-[#7aa2f7] text-lg sm:text-xl hover:text-[#bb9af7] transition-colors"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >View Project
-                    </a>}
+                    >
+                      {project.title === 'SCFFL' ? 'Research Paper' : 'Docs'}
+                    </a>
+                  )}
                 </div>
 
                 {/* Tech Stack Badge Button - Shows on hover too */}
